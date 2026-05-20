@@ -31,7 +31,7 @@
     <h1>Valentina<br><em>Sanhueza</em></h1>
     <div class="hero-rule"></div>
     <p class="hero-tagline">
-      I specialize in building tools that make people's jobs easier. —<br>
+      I specialize in building tools that make people's jobs easier.<br>
       automated pipelines, production apps, interactive data dashboards and analysis.
     </p>
     <div class="hero-cta">
@@ -53,7 +53,7 @@
       <div class="bento-body" style="margin-bottom:1rem;">Python is my home base — I use it to wrangle, analyze, and visualize data in ways that actually make sense to real people.</div>
       <div>
         <span class="skill-tag">Python</span><span class="skill-tag">pandas</span><span class="skill-tag">NumPy</span>
-        <span class="skill-tag">Matplotlib</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">ML fundamentals</span>
+        <span class="skill-tag">Matplotlib</span><span class="skill-tag">Plotly</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">ML fundamentals</span>
       </div>
     </div>
     <div class="bento-card reveal">
@@ -61,7 +61,8 @@
       <div class="bento-title">Full stack roots</div>
       <div style="margin-top:0.8rem;">
         <span class="skill-tag">Flask</span><span class="skill-tag">Django</span>
-        <span class="skill-tag">REST APIs</span><span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">REST APIs</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite</span>
+        <span class="skill-tag">SQLAlchemy</span><span class="skill-tag">PDF Parsing</span>
       </div>
     </div>
     <div class="bento-card reveal">
@@ -69,7 +70,7 @@
       <div class="bento-title">Clean UIs</div>
       <div style="margin-top:0.8rem;">
         <span class="skill-tag">HTML / CSS</span><span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Responsive design</span>
+        <span class="skill-tag">Jinja2</span><span class="skill-tag">Responsive design</span>
       </div>
     </div>
     <div class="bento-card reveal">
@@ -77,7 +78,7 @@
       <div class="bento-title">Day-to-day</div>
       <div style="margin-top:0.8rem;">
         <span class="skill-tag">Git / GitHub</span><span class="skill-tag">Render Deployment</span>
-        <span class="skill-tag">SQL</span><span class="skill-tag">Tableau</span>
+        <span class="skill-tag">SQL</span><span class="skill-tag">ERD / Schema Design</span><span class="skill-tag">Tableau</span>
       </div>
     </div>
     <div class="bento-card wide reveal">
@@ -96,36 +97,85 @@
     <h2>Things I've <em>built</em></h2>
   </div>
   <div class="projects">
+
     <div class="project-card reveal">
       <div>
         <div class="project-badge">✦ PRODUCTION — LIVE SYSTEM</div>
         <div class="project-title">Cenas Kitchen — Full Stack Restaurant Platform</div>
-        <p class="project-desc">Built the complete digital infrastructure for a Houston restaurant from scratch, and have been maintaining and expanding it since.</p>
-        <p class="project-desc">The public side os a full multi-page restaurant website: menus, drinks, catering, online ordering with location selection, applications,etc. Underneath it lives and entirely separate system - a hidden employee portal with role-based authentication, where staff can plae corporate orders from a managed product catalog, and watch training videos. Admins get a full CMS to add and edit products/videos, and every order placed is logged and tracked.
-        </br>
-        One codebase. Two audiences. Built solo.
-        </p>
-        <div class="project-title">Catering PDF Processor</div>
-        <p class="project-desc">A full production webapp designed and built end-to-end to automate how a restaurant company processed catering order PDFs. A manual, error-prone daily workflow became an automated system — A demo app able to intake EZCater PDFs and breakdown the ingredients needed, how much of each, assign drivers based on distance and timing, and calculate driver labor costs.</p>
+        <p class="project-desc">Designed and built the entire digital presence and internal operations platform for a Houston restaurant, and have been maintaining and expanding it since.<br>The public side is a full multi-page website: menus, drinks, catering, online ordering with location selection, community programs, and job applications. Underneath it lives a completely separate system.<br>A hidden employee portal with role-based authentication where staff place corporate orders from a managed product catalog and access training videos. Admins get a full CMS to add and edit products/videos. When an order is placed, it sends the ordered list via email to all corporate employees, and logs itself for managers and admins to see and download as a CSV within the app.<br>One codebase. Two audiences. Built solo.</p>
         <div class="project-tags">
           <span class="skill-tag">Python</span><span class="skill-tag">Flask</span><span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">JavaScript</span><span class="skill-tag">Data Engineering</span><span class="skill-tag">SQL ORM</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">Role-Based Auth</span><span class="skill-tag">Email Integration</span>
         </div>
       </div>
-      <div><a href="https://cenas-kitchen-pdf-processor.onrender.com" class="project-link" target="_blank">GitHub ↗</a></div>
+      <div><a href="https://cenaskitchen.com" class="project-link" target="_blank">Live Site ↗</a><br><a href="https://github.com/leverr18/cenas_website" class="project-link" target="_blank">GitHub ↗</a></div>
     </div>
+
     <div class="project-card reveal">
       <div>
-        <div class="project-badge">// BOOTCAMP PROJECTS</div>
-        <div class="project-title">Rice University — Data &amp; ML Projects</div>
-        <p class="project-desc">Full stack and data projects covering Python pipelines, ML models with scikit-learn, SQL databases, and JavaScript frontends. Coursework and personal explorations in data visualization and analysis.</p>
+        <div class="project-badge">✦ PRODUCTION — LIVE SYSTEM</div>
+        <div class="project-title">Catering PDF Processor</div>
+        <p class="project-desc">EZCater sends catering orders as PDFs. This webapp reads them. It breaks down every ingredient needed and the exact quantities, assigns drivers based on distance and timing, and calculates labor costs — turning a manual, error-prone process into something that just runs. Built end-to-end with Flask, Python, and PostgreSQL.</p>
         <div class="project-tags">
-          <span class="skill-tag">Python</span><span class="skill-tag">scikit-learn</span>
-          <span class="skill-tag">Data Viz</span><span class="skill-tag">SQL</span>
+          <span class="skill-tag">Python</span><span class="skill-tag">Flask</span><span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">PDF Parsing</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">REST API</span>
         </div>
       </div>
-      <div><a href="https://github.com/leverr18" class="project-link" target="_blank">GitHub ↗</a></div>
+      <div><a href="https://cenas-kitchen-pdf-processor.onrender.com" class="project-link" target="_blank">Live Demo ↗</a><br><a href="https://github.com/leverr18/EZCater_webapp_demo" class="project-link" target="_blank">GitHub ↗</a></div>
     </div>
+
+    <div class="project-card reveal">
+      <div>
+        <div class="project-badge">// UNIVERSITY — MACHINE LEARNING · TEAM OF 5</div>
+        <div class="project-title">Uber vs Lyft Fare Comparison &amp; Analysis</div>
+        <p class="project-desc">Built the complete ML pipeline to predict Uber and Lyft ride prices from a real-world dataset in Boston — handling data cleaning, feature engineering, model selection, training, and deployment. The process involved real experimentation: starting with basic regression models that underperformed, pivoting to a Random Forest Classifier, then identifying that the framing was wrong and returning to regression. The final Random Forest Regressor achieved an R² of 0.962 across features including distance, weather, surge pricing, time of day, and ride type. Pipeline serialized with pickle for deployment.<br>The finished webapp lets you input two locations and trip details to get predicted prices across all ride types.</p>
+        <div class="project-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">pandas</span><span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">Random Forest</span><span class="skill-tag">Feature Engineering</span><span class="skill-tag">Machine Learning</span><span class="skill-tag">Flask</span>
+        </div>
+      </div>
+      <div><a href="https://github.com/leverr18/Apr_Project4_Capstone" class="project-link" target="_blank">GitHub ↗</a></div>
+    </div>
+
+    <div class="project-card reveal">
+      <div>
+        <div class="project-badge">// UNIVERSITY — DATA ENGINEERING · TEAM OF 4</div>
+        <div class="project-title">Crowdfunding ETL Pipeline</div>
+        <p class="project-desc">Built a full ETL pipeline from raw Excel files into a structured, queryable PostgreSQL database. Extracted and transformed crowdfunding campaign data by cleaning dates, assigning category and subcategory IDs, splitting contact names, and linking everything through foreign key relationships. Designed the entity-relationship diagram, wrote the database schema, and validated the final import with SQL queries.<br>Once the database was live, ran analysis to surface trends in campaign performance — revealing that theater dominated high-pledge campaigns at 34.3%, that campaign activity peaked mid-2021 before a sharp 2022 decline, and that creative categories consistently outperformed niche ones in backer volume.</p>
+        <div class="project-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">pandas</span><span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">ETL</span><span class="skill-tag">SQL</span><span class="skill-tag">ERD Design</span><span class="skill-tag">Data Engineering</span>
+        </div>
+      </div>
+      <div><a href="https://github.com/Noah-Stevens/Crowdfunding_ETL" class="project-link" target="_blank">GitHub ↗</a></div>
+    </div>
+
+    <div class="project-card reveal">
+      <div>
+        <div class="project-badge">// UNIVERSITY — FRONTEND DATA VIZ</div>
+        <div class="project-title">Earthquake &amp; Tectonic Plate Visualizer</div>
+        <p class="project-desc">Interactive map visualizing live USGS earthquake data and tectonic plate boundaries. Circle markers are dynamically sized and colored by magnitude and depth — so at a glance you can see where the biggest, deepest strikes are clustering. Built entirely in JavaScript, fetching live GeoJSON from a real data source and rendering it with Leaflet. Data-driven styling, layer controls, and popups on every marker.</p>
+        <div class="project-tags">
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">Leaflet.js</span>
+          <span class="skill-tag">GeoJSON</span><span class="skill-tag">Live Data</span><span class="skill-tag">Geospatial Viz</span>
+        </div>
+      </div>
+      <div><a href="https://github.com/leverr18/Mar2025_data_week15" class="project-link" target="_blank">GitHub ↗</a></div>
+    </div>
+
+    <div class="project-card reveal">
+      <div>
+        <div class="project-badge">// UNIVERSITY — FULL STACK DATA APP · TEAM OF 3</div>
+        <div class="project-title">Meteorite Landings — Interactive Dashboard</div>
+        <p class="project-desc">Built the Flask backend and SQL data layer for a full stack interactive dashboard exploring 45,000+ meteorite landing records. Designed the SQLite database, wrote the query helpers, and built the API routes that fed data into a Plotly-powered frontend with multiple interactive views.<br>The app lets users filter by year range and explore: an interactive heatmap showing global strike density, a sunburst chart breaking down meteorite classes by time period, a bar graph of the top 15 most common classes, and a full filterable data table. Key finding: L6 was the most common class from 1950–2013, with 15,251 recorded landings in that window alone.</p>
+        <div class="project-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">Flask</span><span class="skill-tag">REST API</span>
+          <span class="skill-tag">SQLite</span><span class="skill-tag">Plotly</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Data Viz</span>
+        </div>
+      </div>
+      <div><a href="https://github.com/Gartles20/Project_3_Meteors" class="project-link" target="_blank">GitHub ↗</a></div>
+    </div>
+
   </div>
 </section>
  
@@ -142,10 +192,10 @@
       <div class="tl-role">Full Stack Developer</div>
       <div class="tl-company">Cenas</div>
       <ul class="tl-list">
-        <li>Designed and shipped a production webapp to automate PDF processing for catering operations, end-to-end</li>
-        <li>Architected the full backend: REST API, database schema, real-time polling system, and order queue management</li>
+        <li>Built cenaskitchen.com from scratch - a full multi-page restaurant platform with online ordering, catering, and a hidden employee portal featuring role-based authentication, a corporate ordering system, admin CMS, training video library, and complete order tracking.</li>
+        <li>Designed and shipped a second production webapp to automate catering PDF processing - ingredient breakdown, driver assignment by distance and timing, and labor cost calculation.</li>
         <li>Built and maintained the company website, owning frontend design and iterating from stakeholder feedback</li>
-        <li>Deployed and maintained the application on Render, handling production debugging independently</li>
+        <li>Deployed and maintained both applications on Render, handling production debugging, database management, and iterative updates independently throughout.</li>
       </ul>
     </div>
     <div class="tl-item reveal">
@@ -153,8 +203,8 @@
       <div class="tl-role">Data Visualization Bootcamp</div>
       <div class="tl-company">Rice University</div>
       <ul class="tl-list">
-        <li>Python, pandas, NumPy, Matplotlib, scikit-learn, SQL, JavaScript — full stack and data focused</li>
-        <li>Strong intuition for ML from day one; built and deployed full stack data projects throughout</li>
+        <li>Python, pandas, NumPy, Matplotlib, scikit-learn, SQL, JavaScript — full stack and data focused.</li>
+        <li>Strong intuition for ML from day one; built and deployed full stack data projects.</li>
       </ul>
     </div>
   </div>
