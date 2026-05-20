@@ -20,3 +20,31 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 reveals.forEach(r => observer.observe(r));
+const track = document.querySelector('.slides-track');
+if (track) {
+  const slides = Array.from(track.querySelectorAll('.slide'));
+  const dotsContainer = document.querySelector('.slide-dots');
+  let current = 0;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(n) {
+    current = (n + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    document.querySelectorAll('.slide-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  document.querySelector('.slide-prev').addEventListener('click', () => goTo(current - 1));
+  document.querySelector('.slide-next').addEventListener('click', () => goTo(current + 1));
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+}
