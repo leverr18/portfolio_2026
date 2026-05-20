@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentina Sanhueza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=VT323&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+<div class="stars" id="stars"></div>
+ 
+<nav>
+  <span class="nav-sig">valentina sanhueza</span>
+  <div class="nav-links">
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+ 
+<div class="hero">
+  <div class="hero-inner">
+    <span class="pixel-label">[ DATA &amp; FULL STACK DEVELOPER ]</span>
+    <h1>Valentina<br><em>Sanhueza</em></h1>
+    <div class="hero-rule"></div>
+    <p class="hero-tagline">
+      I specialize in building tools that make people's jobs easier. —<br>
+      automated pipelines, production apps, interactive data dashboards and analysis.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">[ VIEW WORK ]</a>
+      <a href="mailto:vsanhueza1806@gmail.com" class="btn btn-ghost">[ GET IN TOUCH ]</a>
+    </div>
+  </div>
+</div>
+ 
+<section class="section" id="skills">
+  <div class="reveal">
+    <div class="section-eyebrow">[ SKILLS ]</div>
+    <h2>What I <em>work with</em></h2>
+  </div>
+  <div class="bento">
+    <div class="bento-card wide reveal">
+      <div class="bento-label">// PYTHON &amp; DATA</div>
+      <div class="bento-title">What I enjoy most</div>
+      <div class="bento-body" style="margin-bottom:1rem;">Python is my home base — I use it to wrangle, analyze, and visualize data in ways that actually make sense to real people.</div>
+      <div>
+        <span class="skill-tag">Python</span><span class="skill-tag">pandas</span><span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Matplotlib</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">ML fundamentals</span>
+      </div>
+    </div>
+    <div class="bento-card reveal">
+      <div class="bento-label">// BACKEND</div>
+      <div class="bento-title">Full stack roots</div>
+      <div style="margin-top:0.8rem;">
+        <span class="skill-tag">Flask</span><span class="skill-tag">Django</span>
+        <span class="skill-tag">REST APIs</span><span class="skill-tag">PostgreSQL</span>
+      </div>
+    </div>
+    <div class="bento-card reveal">
+      <div class="bento-label">// FRONTEND</div>
+      <div class="bento-title">Clean UIs</div>
+      <div style="margin-top:0.8rem;">
+        <span class="skill-tag">HTML / CSS</span><span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Responsive design</span>
+      </div>
+    </div>
+    <div class="bento-card reveal">
+      <div class="bento-label">// TOOLS</div>
+      <div class="bento-title">Day-to-day</div>
+      <div style="margin-top:0.8rem;">
+        <span class="skill-tag">Git / GitHub</span><span class="skill-tag">Render Deployment</span>
+        <span class="skill-tag">SQL</span><span class="skill-tag">Tableau</span>
+      </div>
+    </div>
+    <div class="bento-card wide reveal">
+      <div class="bento-label">// EDUCATION</div>
+      <div class="bento-title">Rice University — Data Visualization, April 2025</div>
+      <div class="bento-body">Intensive program covering Python data pipelines, ML, SQL, and full stack JavaScript. Hit the ground running straight into production work.</div>
+    </div>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<section class="section" id="projects">
+  <div class="reveal">
+    <div class="section-eyebrow">[ PROJECTS ]</div>
+    <h2>Things I've <em>built</em></h2>
+  </div>
+  <div class="projects">
+    <div class="project-card reveal">
+      <div>
+        <div class="project-badge">✦ PRODUCTION — LIVE SYSTEM</div>
+        <div class="project-title">Cenas Kitchen — Full Stack Restaurant Platform</div>
+        <p class="project-desc">Built the complete digital infrastructure for a Houston restaurant from scratch, and have been maintaining and expanding it since.</p>
+        <p class="project-desc">The public side os a full multi-page restaurant website: menus, drinks, catering, online ordering with location selection, applications,etc. Underneath it lives and entirely separate system - a hidden employee portal with role-based authentication, where staff can plae corporate orders from a managed product catalog, and watch training videos. Admins get a full CMS to add and edit products/videos, and every order placed is logged and tracked.
+        </br>
+        One codebase. Two audiences. Built solo.
+        </p>
+        <div class="project-title">Catering PDF Processor</div>
+        <p class="project-desc">A full production webapp designed and built end-to-end to automate how a restaurant company processed catering order PDFs. A manual, error-prone daily workflow became an automated system — A demo app able to intake EZCater PDFs and breakdown the ingredients needed, how much of each, assign drivers based on distance and timing, and calculate driver labor costs.</p>
+        <div class="project-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">Flask</span><span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">Data Engineering</span><span class="skill-tag">SQL ORM</span>
+        </div>
+      </div>
+      <div><a href="https://cenas-kitchen-pdf-processor.onrender.com" class="project-link" target="_blank">GitHub ↗</a></div>
+    </div>
+    <div class="project-card reveal">
+      <div>
+        <div class="project-badge">// BOOTCAMP PROJECTS</div>
+        <div class="project-title">Rice University — Data &amp; ML Projects</div>
+        <p class="project-desc">Full stack and data projects covering Python pipelines, ML models with scikit-learn, SQL databases, and JavaScript frontends. Coursework and personal explorations in data visualization and analysis.</p>
+        <div class="project-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">Data Viz</span><span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div><a href="https://github.com/leverr18" class="project-link" target="_blank">GitHub ↗</a></div>
+    </div>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<section class="section" id="experience">
+  <div class="reveal">
+    <div class="section-eyebrow">[ EXPERIENCE ]</div>
+    <h2>Where I've <em>been</em></h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-date">MAY 2025 — MAY 2026</div>
+      <div class="tl-role">Full Stack Developer</div>
+      <div class="tl-company">Cenas</div>
+      <ul class="tl-list">
+        <li>Designed and shipped a production webapp to automate PDF processing for catering operations, end-to-end</li>
+        <li>Architected the full backend: REST API, database schema, real-time polling system, and order queue management</li>
+        <li>Built and maintained the company website, owning frontend design and iterating from stakeholder feedback</li>
+        <li>Deployed and maintained the application on Render, handling production debugging independently</li>
+      </ul>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-date">COMPLETED APRIL 2025</div>
+      <div class="tl-role">Data Visualization Bootcamp</div>
+      <div class="tl-company">Rice University</div>
+      <ul class="tl-list">
+        <li>Python, pandas, NumPy, Matplotlib, scikit-learn, SQL, JavaScript — full stack and data focused</li>
+        <li>Strong intuition for ML from day one; built and deployed full stack data projects throughout</li>
+      </ul>
+    </div>
+  </div>
+</section>
+ 
+<div class="section-divider"></div>
+ 
+<section class="section" id="contact">
+  <div class="contact-card reveal">
+    <div style="position:relative; z-index:1;">
+      <div class="section-eyebrow" style="justify-content:center; margin-bottom:1rem;">[ CONTACT ]</div>
+      <h2 style="margin-bottom:0.8rem;">Let's <em>talk</em></h2>
+      <p class="contact-sub">Open to data analyst, data engineer, and full stack roles — especially where the work is real and the problems are interesting.</p>
+      <div class="contact-links">
+        <a href="mailto:vsanhueza1806@gmail.com" class="contact-link">✉ vsanhueza1806@gmail.com</a>
+        <a href="https://github.com/leverr18" class="contact-link" target="_blank">⌥ github.com/leverr18</a>
+        <a href="https://linkedin.com/in/valentina-sanhueza" class="contact-link" target="_blank">⌘ LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <p class="footer-text">Valentina Sanhueza — Houston, TX — built from scratch ✦</p>
+</footer>
+
+<script src="{{ url_for('static', filename='work.js') }}"></script>
+</body>
+</html>
